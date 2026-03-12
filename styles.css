@@ -41,7 +41,6 @@ body{
     background-color: var(--bg-primary);
     color: var(--text-primary);
     font-family: var(--font-body);
-    padding: 10px;
 }
 
 /*---ESTILOS HEADER---*/
@@ -59,4 +58,5 @@ header{
 
 .title-grimoire h1{
     font-family: var(--font-title);
+    text-align: center;
 }
