@@ -47,7 +47,6 @@ body{
 
 header{
     width: 100%;
-    background-color: var(--bg-secondary);
 }
 
 .header-container{
@@ -59,4 +58,15 @@ header{
 .title-grimoire h1{
     font-family: var(--font-title);
     text-align: center;
+}
+
+/*----ESTILOS FORMULARIO---*/
+
+section.section-form{
+    width: 100%;
+}
+
+form.form-container{
+    max-width: 1200px;
+    margin: 0 auto;
 }
