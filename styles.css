@@ -1,0 +1,62 @@
+/*---FONTS----*/
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/*----COLORES----*/
+
+:root{
+    /*Fondos*/
+    --bg-primary: #0a0e1a; /*Fondo general*/
+    --bg-secondary: #111827; /*Color para secciones*/
+    --bg-card: #1a2234; /*Para las tarjetas*/
+
+    /*Colores principales*/
+    --color-primary: #22d3ee; /*Turquesa brillante*/
+    --color-secondary: #0ea5e9; /*Color cielo*/
+    --color-accent: #818cf8; /*Color detalles mágicos*/
+
+    /*Textos*/
+    --text-primary: #e2e8f0; /*Texto principal*/
+    --text-secondary: #94a3b8; /*Texto secundario*/
+
+    /*Bordes y detalles*/
+    --border-color: #22d3ee40; /*Turquesa para los bordes*/
+    --glow: 0 0 15px #22d3ee50; /*Sombreado*/
+
+    /*Fuentes*/
+    --font-title: 'Cinzel', serif;
+    --font-body: 'Nunito', sans-serif;
+}
+
+/*----ESTILOS BÁSICOS----*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    padding: 10px;
+}
+
+/*---ESTILOS HEADER---*/
+
+header{
+    width: 100%;
+    background-color: var(--bg-secondary);
+}
+
+.header-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.title-grimoire h1{
+    font-family: var(--font-title);
+}
