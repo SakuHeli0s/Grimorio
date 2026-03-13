@@ -20,6 +20,7 @@ const nombres = {
     mineral: "Mineral Raro"
 }
 
+
 //CODIGO FORMULARIO
 
 function añadirObjeto (evento){
@@ -30,6 +31,10 @@ function añadirObjeto (evento){
     const emojiObjeto = emojis[tipoObjeto]
     const designacionObjeto = nombres[tipoObjeto]
     const descripcionObjeto = textDescription.value
+
+    if(!nombreObjeto || !descripcionObjeto){
+        return
+    }
 
     grimoireList.innerHTML += `
         <li>
@@ -43,6 +48,18 @@ function añadirObjeto (evento){
         </button>
         </li>
     `
+
+    inputForm.value = ""
+    textDescription.value = ""
 }
 
 formContainer.addEventListener('submit', añadirObjeto)
+
+
+//BORRAR ELEMENTO (DELEGACION DE OBJETOS)
+
+grimoireList.addEventListener('click', (evento) => {
+    if (evento.target.closest('.btn-delete')){
+        evento.target.closest('.btn-delete').parentElement.remove()
+    }
+})
