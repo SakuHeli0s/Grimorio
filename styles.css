@@ -82,7 +82,7 @@ form.form-container{
 
 .input-form,
 .item-type,
-.input-description{
+.text-description{
     width: 100%;
     background-color: var(--bg-card);
     color: var(--text-primary);
@@ -93,7 +93,7 @@ form.form-container{
 }
 
 .input-form::placeholder,
-.input-description::placeholder{
+.text-description::placeholder{
     color: var(--text-secondary);
 }
 
@@ -102,7 +102,7 @@ select.item-type{
     color: var(--text-primary);
 }
 
-.input-description{
+.text-description{
     resize: none;
     height: 100px;
 }
