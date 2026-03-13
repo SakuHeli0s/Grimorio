@@ -148,7 +148,7 @@ li h2{
 }
 
 li span{
-    margin-top: 5px;
+    margin: 5px 0;
     color: var(--color-accent);
 }
 
