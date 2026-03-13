@@ -10,11 +10,13 @@
     --bg-primary: #0a0e1a; /*Fondo general*/
     --bg-secondary: #111827; /*Color para secciones*/
     --bg-card: #1a2234; /*Para las tarjetas*/
+    --bg-delete: #680101;
 
     /*Colores principales*/
     --color-primary: #22d3ee; /*Turquesa brillante*/
     --color-secondary: #0ea5e9; /*Color cielo*/
     --color-accent: #818cf8; /*Color detalles mágicos*/
+    --color-delete: #8f3f3f;
 
     /*Textos*/
     --text-primary: #e2e8f0; /*Texto principal*/
@@ -125,7 +127,7 @@ select.item-type{
     justify-content: center;
     flex-wrap: wrap;
     list-style: none;
-    padding: 0;
+    padding-top: 20px;
     gap: 10px;
 }
 
@@ -141,4 +143,25 @@ li{
 
 li h2{
     font-family: var(--font-title);
+}
+
+.emoji{
+    display: block;
+    margin: 0 auto;
+    width: 48px;
+    height: 64px;
+}
+
+.btn-delete{
+    width: 100%;
+    background-color: var(--bg-delete);
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-delete:hover{
+    background-color: var(--color-delete);
 }
