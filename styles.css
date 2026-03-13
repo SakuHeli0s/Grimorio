@@ -143,6 +143,17 @@ li{
 
 li h2{
     font-family: var(--font-title);
+    margin-bottom: 8px;
+    color: var(--color-primary);
+}
+
+li span{
+    margin-top: 5px;
+    color: var(--color-accent);
+}
+
+li p{
+    margin: 5px 0;
 }
 
 .emoji{
@@ -160,6 +171,7 @@ li h2{
     border-radius: 15px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    margin-top: 5px;
 }
 
 .btn-delete:hover{
