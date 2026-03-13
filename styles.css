@@ -163,9 +163,9 @@ li p{
 
 .emoji{
     display: block;
-    margin: 0 auto;
-    width: 48px;
-    height: 64px;
+    font-size: 5rem;
+    text-align: center;
+
 }
 
 .btn-delete{
